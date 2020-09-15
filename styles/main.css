@@ -390,7 +390,7 @@
 
   /* seccion 3*/
   .about-us {
-    padding: 45px;
+    padding: 45px 45px 45px 45px;
   }
 
   .article {
@@ -398,14 +398,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0 45px 0 45px;
+    margin-bottom: 60px;
   }
 
   .article2 {
     flex-direction: row-reverse;
-  }
-
-  .article-lorena {
-    margin-bottom: 63px;
   }
 
   .personal-photo {
@@ -436,6 +433,10 @@
   .description2 {
     text-align: right;
     padding: 0px;
+  }
+
+  .social {
+    padding: 15px 0 0 0;
   }
 
   .fab2 {
