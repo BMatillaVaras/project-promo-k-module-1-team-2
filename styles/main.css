@@ -491,6 +491,16 @@
 /*Desktop*/
 
 @media all and (min-width: 1200px) {
+  /* header */
+
+  .dance {
+    padding-left: 142px;
+  }
+
+  .list {
+    margin-right: 128px;
+  }
+
   /*seccion 2*/
 
   .div-team {
