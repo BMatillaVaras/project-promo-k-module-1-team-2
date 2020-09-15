@@ -187,6 +187,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 15px 0 15px;
 }
 
 .personal-photo {
@@ -396,22 +397,20 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 0 45px 0 45px;
   }
 
   .article2 {
     flex-direction: row-reverse;
   }
 
+  .article-lorena {
+    margin-bottom: 63px;
+  }
+
   .personal-photo {
     width: 205px;
     height: 205px;
-    margin-left: 45px;
-  }
-
-  .personal-photo2 {
-    width: 205px;
-    height: 205px;
-    margin: 0 45px 0 0;
   }
 
   .personal {
@@ -496,16 +495,13 @@
 
   /* seccion 3 */
 
+  .article {
+    padding: 0 138px 0 138px;
+  }
+
   .personal-photo {
     width: 278px;
     height: 278px;
-    margin-left: 138px;
-  }
-
-  .personal-photo2 {
-    width: 278px;
-    height: 278px;
-    margin: 0 138px 0 0;
   }
 
   .personal {
@@ -517,10 +513,6 @@
   }
 
   .description {
-    width: 439px;
-  }
-
-  .description2 {
     width: 439px;
   }
 
