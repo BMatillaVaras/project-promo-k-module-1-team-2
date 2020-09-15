@@ -254,6 +254,7 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid #b8b8b9;
+  background: green;
 }
 
 .footer-small {
@@ -457,35 +458,40 @@
   /*footer*/
 
   .footer {
-    height: 10.625rem;
+    height: 170px;
     flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
   }
 
   .footer-elements {
-    width: 50%;
+    order: 1;
+    width: fit-content;
+    /* width: 50%; */
   }
-
+  /* 
   .footer-small {
     padding: 30px 0px 120px 45px;
   }
 
   .slogan-adalab {
     transform: translate(37px, -70px);
-  }
+  } */
 
   .footer-links {
-    margin: 24px 103px 30px 103px;
+    background: blue;
+    padding: 0%;
+    margin-left: 41.67px;
+    margin-right: 41.67px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 
-  .link-footer {
+  /* .link-footer {
     line-height: 30px;
-  }
+  } */
 }
 
 /*Desktop*/
