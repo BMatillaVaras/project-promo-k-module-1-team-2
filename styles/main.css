@@ -295,9 +295,7 @@
     background: #099d8d;
     width: 100vw;
     flex-direction: row;
-    justify-content: space-between;
     opacity: 0.95;
-    z-index: 1000;
   }
 
   .dance {
@@ -307,15 +305,26 @@
 
   .list {
     background: var(---dark-green);
-    display: flex;
-    justify-content: space-between;
-    margin-right: 45px;
-    width: 300px;
+    padding-right: 0;
+    margin-right: 35px;
+    width: fit-content;
   }
 
   .list-item {
-    display: flex;
-    flex-direction: row;
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .link1 {
+    padding: 16px 9px 14px 9px;
+  }
+
+  .link2 {
+    padding: 16px 9.5px 14px 9px;
+  }
+
+  .link3 {
+    padding: 16px 10px 14px 9.5px;
   }
 
   /*hero*/
