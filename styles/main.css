@@ -77,7 +77,8 @@
   align-items: center;
 }
 
-.hero {
+.box-hero {
+  background-image: url("../images/ritmoMovil.jpg");
   width: 100%;
 }
 
