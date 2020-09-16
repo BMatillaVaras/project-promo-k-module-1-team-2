@@ -36,6 +36,7 @@
   align-items: center;
   position: fixed;
   width: 100vw;
+  z-index: 999;
 }
 
 .dance {
@@ -77,7 +78,8 @@
   align-items: center;
 }
 
-.hero {
+.box-hero {
+  background-image: url("../images/ritmoMovil.jpg");
   width: 100%;
 }
 
@@ -187,6 +189,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 15px 0 15px;
 }
 
 .personal-photo {
@@ -252,6 +255,7 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid #b8b8b9;
+  background: green;
 }
 
 .footer-small {
@@ -294,9 +298,7 @@
     background: #099d8d;
     width: 100vw;
     flex-direction: row;
-    justify-content: space-between;
     opacity: 0.95;
-    z-index: 1000;
   }
 
   .dance {
@@ -306,15 +308,26 @@
 
   .list {
     background: var(---dark-green);
-    display: flex;
-    justify-content: space-between;
-    margin-right: 45px;
-    width: 300px;
+    padding-right: 0;
+    margin-right: 35px;
+    width: fit-content;
   }
 
   .list-item {
-    display: flex;
-    flex-direction: row;
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .link1 {
+    padding: 16px 9px 14px 9px;
+  }
+
+  .link2 {
+    padding: 16px 9.5px 14px 9px;
+  }
+
+  .link3 {
+    padding: 16px 10px 14px 9.5px;
   }
 
   /*hero*/
@@ -337,7 +350,7 @@
     display: inline;
     text-align: center;
     opacity: 0.8;
-    padding: 10px;
+    padding: 15px 30px 15px 30px;
     transform: translate(76px, -40px);
     font-family: var(--OpenSans);
     font-size: 1.125rem;
@@ -389,13 +402,15 @@
 
   /* seccion 3*/
   .about-us {
-    padding: 45px;
+    padding: 45px 45px 45px 45px;
   }
 
   .article {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 0 45px 0 45px;
+    margin-bottom: 60px;
   }
 
   .article2 {
@@ -405,13 +420,6 @@
   .personal-photo {
     width: 205px;
     height: 205px;
-    margin-left: 45px;
-  }
-
-  .personal-photo2 {
-    width: 205px;
-    height: 205px;
-    margin: 0 45px 0 0;
   }
 
   .personal {
@@ -439,6 +447,10 @@
     padding: 0px;
   }
 
+  .social {
+    padding: 15px 0 0 0;
+  }
+
   .fab2 {
     text-align: right;
   }
@@ -446,40 +458,55 @@
   /*footer*/
 
   .footer {
-    height: 10.625rem;
+    height: 170px;
     flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
   }
 
   .footer-elements {
-    width: 50%;
+    order: 1;
+    width: fit-content;
+    /* width: 50%; */
   }
-
+  /* 
   .footer-small {
     padding: 30px 0px 120px 45px;
   }
 
   .slogan-adalab {
     transform: translate(37px, -70px);
-  }
+  } */
 
   .footer-links {
-    margin: 24px 103px 30px 103px;
+    background: blue;
+    padding: 0%;
+    margin-left: 41.67px;
+    margin-right: 41.67px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 
-  .link-footer {
+  /* .link-footer {
     line-height: 30px;
-  }
+  } */
 }
 
 /*Desktop*/
 
 @media all and (min-width: 1200px) {
+  /* header */
+
+  .dance {
+    padding-left: 142px;
+  }
+
+  .list {
+    margin-right: 128px;
+  }
+
   /*seccion 2*/
 
   .div-team {
@@ -496,16 +523,13 @@
 
   /* seccion 3 */
 
+  .article {
+    padding: 0 138px 0 138px;
+  }
+
   .personal-photo {
     width: 278px;
     height: 278px;
-    margin-left: 138px;
-  }
-
-  .personal-photo2 {
-    width: 278px;
-    height: 278px;
-    margin: 0 138px 0 0;
   }
 
   .personal {
@@ -517,10 +541,6 @@
   }
 
   .description {
-    width: 439px;
-  }
-
-  .description2 {
     width: 439px;
   }
 
