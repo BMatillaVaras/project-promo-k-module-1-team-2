@@ -307,15 +307,14 @@
 
   .list {
     background: var(---dark-green);
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     margin-right: 45px;
     width: 300px;
   }
 
   .list-item {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
   }
 
   /*hero*/
