@@ -1,9 +1,9 @@
 /* section3*/
 
 .about-us {
-  font-family: var(--Rubik);
+  font-family: $font-title;
   font-size: 24px;
-  color: var(--dark-green);
+  color: $dark-color;
   text-align: center;
   padding: 30px 0 30px 0;
 }
@@ -29,17 +29,17 @@
 }
 
 .name {
-  font-family: var(--OpenSans);
+  font-family: $font-paragraph;
   font-size: 20px;
-  color: var(--black);
+  color: $color-adalabers;
   margin-top: 15px;
   line-height: 45px;
 }
 
 .description {
-  font-family: var(--OpenSans);
+  font-family: $font-paragraph;
   font-size: 16px;
-  color: var(--grey);
+  color: $description-text;
   padding: 0 18px 0 18px;
   text-align: center;
 }
@@ -53,7 +53,7 @@
 .fab2 {
   box-sizing: content-box;
   padding: 0 7px 0 7px;
-  color: var(--dark-green);
+  color: $dark-color;
   height: 15px;
   width: 15px;
   text-align: center;
@@ -61,7 +61,7 @@
 
 .point:before {
   content: ".";
-  color: var(--dark-green);
+  color: $dark-color;
   position: relative;
   top: -4px;
 }
