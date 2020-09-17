@@ -1,0 +1,82 @@
+/* seccion 2 */
+
+.team-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team {
+  font-family: var(--Rubik);
+  font-size: 24px;
+  color: var(--light-green);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.div-team {
+  padding: 15px;
+}
+
+.description-team {
+  font-family: var(--OpenSans);
+  font-size: 16px;
+  color: var(--grey);
+  text-align: center;
+  padding: 15px;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  transform: translate(0, 15px) rotate(45deg);
+  z-index: 10;
+}
+
+.features {
+  background-color: rgb(241, 241, 241);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.strength-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.strength {
+  font-family: var(--Rubik);
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+  color: var(--dark-green);
+  padding-top: 30px;
+}
+
+.features-text {
+  font-family: var(--OpenSans);
+  font-size: 16px;
+  color: var(--grey);
+  text-align: center;
+  line-height: 24px;
+  padding: 0 15px 35px 15px;
+}
+
+.weaknesses-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weaknesses {
+  font-family: var(--Rubik);
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+  color: var(--dark-green);
+  z-index: 1;
+}

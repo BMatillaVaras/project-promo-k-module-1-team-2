@@ -1,0 +1,20 @@
+* hero */ .section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-hero {
+  background-image: url("../images/ritmoMovil.jpg");
+  width: 100%;
+}
+
+.slogan {
+  color: var(--black);
+  background: var(--white);
+  display: inline;
+  text-align: center;
+  transform: translate(0, -10px);
+  font-family: var(--OpenSans);
+  font-size: 1.125rem;
+}

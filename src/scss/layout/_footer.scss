@@ -1,0 +1,44 @@
+/*footer*/
+
+.footer {
+  font-family: var(--OpenSans);
+  font-size: 0.875rem;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #b8b8b9;
+  background: green;
+}
+
+.footer-small {
+  height: 1.25rem;
+  color: #b8b8b9;
+  padding: 30px 74px 20px 74px;
+}
+
+.icon-adalab {
+  order: 1;
+}
+
+.slogan-adalab {
+  height: 2.813rem;
+}
+
+.footer-links {
+  height: 3.75rem;
+  margin: 20px 103px 30px 103px;
+  text-align: center;
+}
+
+.link-footer {
+  color: #54585a;
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.slogan-adalab {
+  height: 2.813rem;
+}
