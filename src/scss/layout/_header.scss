@@ -13,7 +13,7 @@
   background-color: $dark-color;
   color: $background-color;
   font-size: 1rem;
-  font-family: var(--Rubik);
+  font-family: $font-title;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,19 +23,18 @@
 }
 
 .list {
-  background: var(--light-green);
+  background: $light-color;
   font-size: 0.9375rem;
-  font-family: var(--Rubik);
-  color: var(--white);
+  font-family: $font-title;
+  color: $background-color;
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  /*min-width: 320px;*/
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
 }
 
 .link {
-  color: var(--white);
+  color: $background-color;
   text-decoration: none;
 }
