@@ -113,56 +113,6 @@
 .slogan-adalab {
   height: 2.813rem; }
 
-@media all and (min-width: 768px) {
-  .footer {
-    height: 170px;
-    flex-direction: row;
-    /*flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;*/ }
-  .footer-elements {
-    order: 1;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    /* width: 50%; */ }
-  /* 
-  .footer-small {
-    padding: 30px 0px 120px 45px;
-  }
-
-  .slogan-adalab {
-    transform: translate(37px, -70px);
-  } */
-  .footer-links {
-    background: blue;
-    padding: 0%;
-    margin-left: 41.67px;
-    margin-right: 41.67px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; }
-  /* .link-footer {
-    line-height: 30px;
-  } */ }
-
-@media all and (min-width: 1200px) {
-  .footer {
-    height: 10.06rem; }
-  .footer-elements {
-    width: 50%; }
-  .footer-small {
-    padding: 60px 0px 120px 138px; }
-  .slogan-adalab {
-    transform: translate(130px, -70px); }
-  .footer-links {
-    margin: 24px 138px 30px 103px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; }
-  .link-footer {
-    line-height: 30px; } }
-
 /* seccion 2 */
 .team {
   display: flex;
