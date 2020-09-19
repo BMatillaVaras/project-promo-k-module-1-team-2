@@ -1,12 +1,12 @@
 /* seccion 2 */
 
-.team-box {
+.team {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.team {
+.team__title {
   font-family: $font-title;
   font-size: 24px;
   color: $light-color;
@@ -14,11 +14,11 @@
   margin-top: 30px;
 }
 
-.div-team {
+.team__box {
   padding: 15px;
 }
 
-.description-team {
+.team__box--description {
   font-family: $font-paragraph;
   font-size: 16px;
   color: $description-text;
@@ -26,7 +26,7 @@
   padding: 15px;
 }
 
-.square {
+.team__square {
   width: 30px;
   height: 30px;
   background-color: $background-color;
@@ -42,13 +42,13 @@
   align-items: center;
 }
 
-.strength-box {
+.features__strength {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.strength {
+.features__strength--title {
   font-family: $font-title;
   font-size: 22px;
   line-height: 45px;
@@ -57,7 +57,7 @@
   padding-top: 30px;
 }
 
-.features-text {
+.features__strength--text {
   font-family: $font-paragraph;
   font-size: 16px;
   color: $description-text;
@@ -66,13 +66,13 @@
   padding: 0 15px 35px 15px;
 }
 
-.weaknesses-box {
+.features__weaknesses {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.weaknesses {
+.features__weaknesses--title {
   font-family: $font-title;
   font-size: 22px;
   line-height: 45px;
@@ -81,13 +81,22 @@
   z-index: 1;
 }
 
+.features__weaknesses--text {
+  font-family: $font-paragraph;
+  font-size: 16px;
+  color: $description-text;
+  text-align: center;
+  line-height: 24px;
+  padding: 0 15px 35px 15px;
+}
+
 @media all and (min-width: 768px) {
-  .team {
+  .team__title {
     color: $dark-color;
     margin-top: 45px;
   }
 
-  .div-team {
+  .team__box {
     padding: 15px 45px 30px 45px;
   }
 
@@ -97,44 +106,48 @@
     justify-content: center;
     align-items: flex-start;
   }
-  .strength-box {
+  .features__strength {
     width: 50vw;
     margin: 0 15px 30px 45px;
   }
-  .strength {
+  .features__strength--title {
     padding-top: 30px;
   }
-  .weaknesses-box {
+  .features__weaknesses {
     width: 50vw;
     margin: 0 45px 30px 15px;
   }
-  .weaknesses {
+  .features__weaknesses--title {
     padding-top: 30px;
   }
 
-  .features-text {
+  .features__strength--text {
     padding: 0;
   }
 
-  .features-text1 {
+  .features__strength--text1 {
     padding-top: 15px;
   }
 
-  .features-text2 {
+  .features__weaknesses--text {
+    padding: 0;
+  }
+
+  .features__weaknesses--text2 {
     padding-top: 15px;
   }
 }
 
 @media all and (min-width: 1200px) {
-  .div-team {
+  .team__box {
     padding: 15px 300px 30px 300px;
   }
 
-  .strength-box {
+  .features__strength {
     margin: 0 22.5px 30px 140px;
   }
 
-  .weaknesses-box {
+  .features__weaknesses {
     margin: 0 140px 30px 22.5px;
   }
 }

@@ -16,9 +16,12 @@
 //Layout
 
 @import "./layout/header.scss";
-@import "./layout/team.scss";
-@import "./layout/about-us.scss";
 @import "./layout/footer.scss";
+
+//Pages
+
+@import "./pages/team.scss";
+@import "./pages/about-us.scss";
 
 //Components
 
@@ -30,30 +33,6 @@
   /*header*/
 
   /*hero*/
-
-  .section1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero {
-    height: auto;
-    overflow: hidden;
-    /* position: relative;
-    top: -50px; */
-  }
-
-  .slogan {
-    background: var(--white);
-    display: inline;
-    text-align: center;
-    opacity: 0.8;
-    padding: 15px 30px 15px 30px;
-    transform: translate(76px, -40px);
-    font-family: var(--OpenSans);
-    font-size: 1.125rem;
-  }
 
   /* seccion 2 */
 
