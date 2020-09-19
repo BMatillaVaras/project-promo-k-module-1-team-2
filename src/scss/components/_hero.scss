@@ -1,0 +1,50 @@
+/* hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__img {
+  background-image: url("../images/ritmoMovil.jpg");
+  width: 100%;
+}
+
+.hero__slogan {
+  color: var(--black);
+  background: var(--white);
+  display: inline;
+  text-align: center;
+  transform: translate(0, -10px);
+  font-family: var(--OpenSans);
+  font-size: 1.125rem;
+}
+
+@media all and (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__img {
+    height: auto;
+    overflow: hidden;
+    /* position: relative;
+    top: -50px; */
+  }
+
+  .hero__slogan {
+    background: var(--white);
+    display: inline;
+    text-align: center;
+    opacity: 0.8;
+    padding: 15px 30px 15px 30px;
+    transform: translate(76px, -40px);
+    font-family: var(--OpenSans);
+    font-size: 1.125rem;
+  }
+}
+@media all and (min-width: 1200px) {
+}

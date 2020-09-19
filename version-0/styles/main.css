@@ -78,7 +78,8 @@
   align-items: center;
 }
 
-.hero {
+.box-hero {
+  background-image: url("../images/ritmoMovil.jpg");
   width: 100%;
 }
 
@@ -349,7 +350,7 @@
     display: inline;
     text-align: center;
     opacity: 0.8;
-    padding: 10px;
+    padding: 15px 30px 15px 30px;
     transform: translate(76px, -40px);
     font-family: var(--OpenSans);
     font-size: 1.125rem;
@@ -401,13 +402,15 @@
 
   /* seccion 3*/
   .about-us {
-    padding: 45px;
+    padding: 45px 45px 45px 45px;
   }
 
   .article {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 0 45px 0 45px;
+    margin-bottom: 60px;
   }
 
   .article2 {
@@ -417,13 +420,6 @@
   .personal-photo {
     width: 205px;
     height: 205px;
-    margin-left: 45px;
-  }
-
-  .personal-photo2 {
-    width: 205px;
-    height: 205px;
-    margin: 0 45px 0 0;
   }
 
   .personal {
@@ -449,6 +445,10 @@
   .description2 {
     text-align: right;
     padding: 0px;
+  }
+
+  .social {
+    padding: 15px 0 0 0;
   }
 
   .fab2 {
@@ -523,16 +523,13 @@
 
   /* seccion 3 */
 
+  .article {
+    padding: 0 138px 0 138px;
+  }
+
   .personal-photo {
     width: 278px;
     height: 278px;
-    margin-left: 138px;
-  }
-
-  .personal-photo2 {
-    width: 278px;
-    height: 278px;
-    margin: 0 138px 0 0;
   }
 
   .personal {
@@ -544,10 +541,6 @@
   }
 
   .description {
-    width: 439px;
-  }
-
-  .description2 {
     width: 439px;
   }
 
