@@ -7,19 +7,35 @@
   position: fixed;
   width: 100vw;
   z-index: 999;
-}
 
-.header__title {
-  background-color: $dark-color;
-  color: $background-color;
-  font-size: 1rem;
-  font-family: $font-title;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 100vw;
-  opacity: 0.95;
+  &__title {
+    background-color: $dark-color;
+    color: $background-color;
+    font-size: 1rem;
+    font-family: $font-title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    opacity: 0.95;
+  }
+  @media all and (min-width: 768px) {
+    background: #099d8d;
+    width: 100vw;
+    flex-direction: row;
+    opacity: 0.95;
+
+    &__title {
+      justify-content: flex-start;
+      padding-left: 45px;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    &__title {
+      padding-left: 142px;
+    }
+  }
 }
 
 .list {
@@ -32,57 +48,31 @@
   justify-content: space-between;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
-}
 
-.list__item--link {
-  color: $background-color;
-  text-decoration: none;
-}
-
-@media all and (min-width: 768px) {
-  .header {
-    background: #099d8d;
-    width: 100vw;
-    flex-direction: row;
-    opacity: 0.95;
+  &__item--link {
+    color: $background-color;
+    text-decoration: none;
   }
-
-  .header__title {
-    justify-content: flex-start;
-    padding-left: 45px;
-  }
-
-  .list {
-    background: var(---dark-green);
+  @media all and (min-width: 768px) {
+    background: $dark-color;
     padding-right: 0;
     margin-right: 35px;
     width: fit-content;
+    &__item {
+      display: inline;
+      white-space: nowrap;
+      &--link1 {
+        padding: 16px 9px 14px 9px;
+      }
+      &--link2 {
+        padding: 16px 9.5px 14px 9px;
+      }
+      &--link3 {
+        padding: 16px 10px 14px 9.5px;
+      }
+    }
   }
-
-  .list__item {
-    display: inline;
-    white-space: nowrap;
-  }
-
-  .list__item--link1 {
-    padding: 16px 9px 14px 9px;
-  }
-
-  .list__item--link2 {
-    padding: 16px 9.5px 14px 9px;
-  }
-
-  .list__item--link3 {
-    padding: 16px 10px 14px 9.5px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .header__title {
-    padding-left: 142px;
-  }
-
-  .list {
+  @media all and (min-width: 1200px) {
     margin-right: 128px;
   }
 }
