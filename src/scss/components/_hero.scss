@@ -5,148 +5,140 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-
-.hero__img1 {
-  width: 100%;
-}
-.hero__img2 {
-  width: 100%;
-  display: none;
-}
-.hero__img3 {
-  width: 100%;
-  display: none;
-}
-.hero__img4 {
-  width: 100%;
-  display: none;
-}
-.hero__img5 {
-  width: 100%;
-  display: none;
-}
-
-.hero__slogan {
-  color: $color-adalabers;
-  background: $background-color;
-  position: absolute;
-  bottom: -40px;
-  padding: 15px;
-  display: inline;
-  text-align: center;
-  transform: translate(0, -10px);
-  font-family: $font-paragraph;
-  font-size: 1.125rem;
-}
-
-@media all and (min-width: 550px) {
-  .hero__img1 {
+  &__img1 {
+    width: 100%;
+  }
+  &__img2 {
     width: 100%;
     display: none;
   }
-  .hero__img2 {
-    width: 100%;
-    display: block;
-  }
-  .hero__img3 {
+  &__img3 {
     width: 100%;
     display: none;
   }
-  .hero__img4 {
+  &__img4 {
     width: 100%;
     display: none;
   }
-  .hero__img5 {
+  &__img5 {
     width: 100%;
     display: none;
   }
-}
-
-@media all and (min-width: 768px) {
-  .hero {
+  &__slogan {
+    color: $color-adalabers;
+    background: $background-color;
+    position: absolute;
+    bottom: -40px;
+    padding: 15px;
+    display: inline;
+    text-align: center;
+    transform: translate(0, -10px);
+    font-family: $font-paragraph;
+    font-size: 1.125rem;
+  }
+  @media all and (min-width: 550px) {
+    &__img1 {
+      width: 100%;
+      display: none;
+    }
+    &__img2 {
+      width: 100%;
+      display: block;
+    }
+    &__img3 {
+      width: 100%;
+      display: none;
+    }
+    &__img4 {
+      width: 100%;
+      display: none;
+    }
+    &__img5 {
+      width: 100%;
+      display: none;
+    }
+  }
+  @media all and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
 
-  .hero__img1 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img2 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img3 {
-    width: 100%;
-    display: block;
-  }
-  .hero__img4 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img5 {
-    width: 100%;
-    display: none;
-  }
+    &__img1 {
+      width: 100%;
+      display: none;
+    }
+    &__img2 {
+      width: 100%;
+      display: none;
+    }
+    &__img3 {
+      width: 100%;
+      display: block;
+    }
+    &__img4 {
+      width: 100%;
+      display: none;
+    }
+    &__img5 {
+      width: 100%;
+      display: none;
+    }
 
-  .hero__slogan {
-    display: inline;
-    text-align: center;
-    opacity: 0.8;
-    padding: 15px 30px 15px 30px;
-    bottom: -10px;
-    left: 46px;
+    &__slogan {
+      display: inline;
+      text-align: center;
+      opacity: 0.8;
+      padding: 15px 30px 15px 30px;
+      bottom: -10px;
+      left: 46px;
+    }
   }
-}
+  @media all and (min-width: 990px) {
+    &__img1 {
+      width: 100%;
+      display: none;
+    }
+    &__img2 {
+      width: 100%;
+      display: none;
+    }
+    &__img3 {
+      width: 100%;
+      display: none;
+    }
+    &__img4 {
+      width: 100%;
+      display: block;
+    }
+    &__img5 {
+      width: 100%;
+      display: none;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    &__img1 {
+      width: 100%;
+      display: none;
+    }
+    &__img2 {
+      width: 100%;
+      display: none;
+    }
+    &__img3 {
+      width: 100%;
+      display: none;
+    }
+    &__img4 {
+      width: 100%;
+      display: none;
+    }
+    &__img5 {
+      width: 100%;
+      display: block;
+    }
 
-@media all and (min-width: 990px) {
-  .hero__img1 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img2 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img3 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img4 {
-    width: 100%;
-    display: block;
-  }
-  .hero__img5 {
-    width: 100%;
-    display: none;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .hero__img1 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img2 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img3 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img4 {
-    width: 100%;
-    display: none;
-  }
-  .hero__img5 {
-    width: 100%;
-    display: block;
-  }
-
-  .hero__slogan {
-    left: 138px;
+    &__slogan {
+      left: 138px;
+    }
   }
 }
