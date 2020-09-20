@@ -4,21 +4,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.hero__img {
-  background-image: url("../images/ritmoMovil.jpg");
+.hero__img1 {
   width: 100%;
+}
+.hero__img2 {
+  width: 100%;
+  display: none;
+}
+.hero__img3 {
+  width: 100%;
+  display: none;
+}
+.hero__img4 {
+  width: 100%;
+  display: none;
+}
+.hero__img5 {
+  width: 100%;
+  display: none;
 }
 
 .hero__slogan {
-  color: var(--black);
-  background: var(--white);
+  color: $color-adalabers;
+  background: $background-color;
+  position: absolute;
+  bottom: -40px;
+  padding: 15px;
   display: inline;
   text-align: center;
   transform: translate(0, -10px);
-  font-family: var(--OpenSans);
+  font-family: $font-paragraph;
   font-size: 1.125rem;
+}
+
+@media all and (min-width: 550px) {
+  .hero__img1 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img2 {
+    width: 100%;
+    display: block;
+  }
+  .hero__img3 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img4 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img5 {
+    width: 100%;
+    display: none;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -28,23 +70,83 @@
     align-items: flex-start;
   }
 
-  .hero__img {
-    height: auto;
-    overflow: hidden;
-    /* position: relative;
-    top: -50px; */
+  .hero__img1 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img2 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img3 {
+    width: 100%;
+    display: block;
+  }
+  .hero__img4 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img5 {
+    width: 100%;
+    display: none;
   }
 
   .hero__slogan {
-    background: var(--white);
     display: inline;
     text-align: center;
     opacity: 0.8;
     padding: 15px 30px 15px 30px;
-    transform: translate(76px, -40px);
-    font-family: var(--OpenSans);
-    font-size: 1.125rem;
+    bottom: -10px;
+    left: 46px;
   }
 }
+
+@media all and (min-width: 990px) {
+  .hero__img1 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img2 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img3 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img4 {
+    width: 100%;
+    display: block;
+  }
+  .hero__img5 {
+    width: 100%;
+    display: none;
+  }
+}
+
 @media all and (min-width: 1200px) {
+  .hero__img1 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img2 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img3 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img4 {
+    width: 100%;
+    display: none;
+  }
+  .hero__img5 {
+    width: 100%;
+    display: block;
+  }
+
+  .hero__slogan {
+    left: 138px;
+  }
 }
