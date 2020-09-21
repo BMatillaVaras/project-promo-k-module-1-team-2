@@ -1,0 +1,43 @@
+/* hero */
+
+.hero2 {
+  &__img1 {
+    width: 100%;
+  }
+  &__img2 {
+    width: 100%;
+    display: none;
+  }
+  &__img3 {
+    width: 100%;
+    display: none;
+  }
+  @media all and (min-width: 768px) {
+    &__img1 {
+      width: 100%;
+      display: none;
+    }
+    &__img2 {
+      width: 100%;
+      display: block;
+    }
+    &__img3 {
+      width: 100%;
+      display: none;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    &__img1 {
+      width: 100%;
+      display: none;
+    }
+    &__img2 {
+      width: 100%;
+      display: none;
+    }
+    &__img3 {
+      width: 100%;
+      display: block;
+    }
+  }
+}

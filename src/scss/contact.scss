@@ -14,11 +14,13 @@
 
 //Layout
 
-/*
 @import "./layout/header.scss";
-*/
 @import "./layout/footer.scss";
 
 //Pages
 
 @import "./pages/form.scss";
+
+//Components
+
+@import "./components/hero2.scss";
