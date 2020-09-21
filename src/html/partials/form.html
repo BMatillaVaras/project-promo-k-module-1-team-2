@@ -11,24 +11,48 @@
     >
   </div>
   <form action="/signup" method="post" class="container__form">
-    <label for="name">Nombre completo <span class="asterisk">*</span></label>
-    <input id="name" type="text" name="name" placeholder="Nombre..." />
-    <label for="mail">Email <span class="asterisk">*</span></label>
+    <label for="name" class="container__form--label"
+      >Nombre completo <span class="asterisk">*</span></label
+    >
     <input
+      class="container__form--input"
+      id="name"
+      type="text"
+      name="name"
+      placeholder="Nombre..."
+      required
+    />
+    <label for="mail" class="container__form--label"
+      >Email <span class="asterisk">*</span></label
+    >
+    <input
+      class="container__form--mail"
       id="mail"
       type="email"
       name="mail"
       value="nombre.apellidos@mail.com"
+      required
     />
-    <label for="tel">Teléfono</label>
-    <input id="tel" type="tel" name="tel" placeholder="Ej: 123456789" />
-    <label for="message">Mensaje <span class="asterisk">*</span></label>
+    <label for="tel" class="container__form--label">Teléfono</label>
     <input
-      id="message"
-      type="text"
-      name="message"
-      placeholder="¿Qué necesitas?"
+      class="container__form--input"
+      id="tel"
+      type="tel"
+      name="tel"
+      placeholder="Ej: 123456789"
     />
-    <input type="submit" value="Enviar" />
+    <label for="message" class="container__form--label"
+      >Mensaje <span class="asterisk">*</span></label
+    >
+    <textarea
+      class="container__form--message"
+      id="message"
+      name="message"
+      rows="4"
+      required
+    >
+¿Qué necesitas?
+    </textarea>
+    <input class="container__form--submit" type="submit" value="Enviar" />
   </form>
 </section>
