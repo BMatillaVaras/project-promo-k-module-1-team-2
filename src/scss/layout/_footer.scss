@@ -1,29 +1,25 @@
 /*footer*/
 
 .footer {
-  font-family: var(--OpenSans);
+  font-family: $font-paragraph;
   font-size: 0.875rem;
   height: 15.625rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #b8b8b9;
-  background: green;
+  border-top: 1px solid $color-small;
 }
 
 .footer-small {
   height: 1.25rem;
-  color: #b8b8b9;
+  color: $color-small;
   padding: 30px 74px 20px 74px;
+  background: lightblue;
 }
 
-.icon-adalab {
+.logo-adalab {
   order: 1;
-}
-
-.slogan-adalab {
-  height: 2.813rem;
 }
 
 .footer-links {
@@ -33,12 +29,41 @@
 }
 
 .link-footer {
-  color: #54585a;
-  font-family: "Open Sans";
+  color: $description-text;
+  font-family: $font-paragraph;
   font-weight: 600;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .slogan-adalab {
   height: 2.813rem;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo-adalab {
+    order: 0;
+  }
+  .slogan-adalab {
+    flex-wrap: wrap;
+  }
+  .footer-small-logo {
+    flex-wrap: wrap;
+  }
+  .footer-links {
+    text-align: right;
+    margin-right: 24px 45px 56px 0px;
+  }
+  .footer-small {
+    height: 1.25rem;
+    color: $color-small;
+    padding: 0;
+    background: lightblue;
+  }
 }

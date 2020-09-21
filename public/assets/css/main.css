@@ -90,13 +90,11 @@
 .footer-small {
   height: 1.25rem;
   color: #b8b8b9;
-  padding: 30px 74px 20px 74px; }
+  padding: 30px 74px 20px 74px;
+  background: lightblue; }
 
-.icon-adalab {
+.logo-adalab {
   order: 1; }
-
-.slogan-adalab {
-  height: 2.813rem; }
 
 .footer-links {
   height: 3.75rem;
@@ -107,10 +105,32 @@
   color: #54585a;
   font-family: "Open Sans";
   font-weight: 600;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .slogan-adalab {
   height: 2.813rem; }
+
+@media all and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+  .logo-adalab {
+    order: 0; }
+  .slogan-adalab {
+    flex-wrap: wrap; }
+  .footer-small-logo {
+    flex-wrap: wrap; }
+  .footer-links {
+    text-align: right;
+    margin-right: 24px 45px 56px 0px; }
+  .footer-small {
+    height: 1.25rem;
+    color: #b8b8b9;
+    padding: 0;
+    background: lightblue; } }
 
 /* seccion 2 */
 .team {
