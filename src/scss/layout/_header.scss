@@ -52,6 +52,7 @@
   &__item--link {
     color: $background-color;
     text-decoration: none;
+    text-transform: uppercase;
   }
   @media all and (min-width: 768px) {
     background: $dark-color;
