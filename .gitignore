@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+node_modules
+=======
 # Created by https://www.gitignore.io/api/sass,node,bower,macos
 
 # Bower
@@ -52,3 +55,4 @@ public
 
 # vscode
 .vscode
+>>>>>>> master
