@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">B.A.I.L.A.</h1>
+      <nav>
+        <ul class="list">
+          <li class="list__item">
+            <a
+              class="list__item--link list__item--link1"
+              href="index.html#team"
+              title="Ir a equipo"
+              >Equipo</a
+            >
+          </li>
+          <li class="list__item">
+            <a
+              class="list__item--link list__item--link2"
+              href="index.html#about-us"
+              title="Ir a quiénes somos"
+              >Quiénes somos</a
+            >
+          </li>
+          <li class="list__item">
+            <a
+              class="list__item--link list__item--link3"
+              href="./contact.html"
+              title="Ir a contacto"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero2">
+      <div>
+        <img
+          src="./assets/images/hero-contact-movil.jpg"
+          alt="hero movil"
+          class="hero2__img1"
+        />
+        <img
+          src="./assets/images/hero-contact-tablet.jpg"
+          alt="hero movil"
+          class="hero2__img2"
+        />
+        <img
+          src="./assets/images/hero-contact-desktop.jpg"
+          alt="hero movil"
+          class="hero2__img3"
+        />
+      </div>
+    </section>
+
+    <section class="container">
+      <h1 class="container__title">Contacto</h1>
+      <div class="container__text">
+        <p class="container__text--principal">
+          Si necesitas ponerte en contacto con nosotras, no dudes en escribirnos un
+          e-mail y te contestaremos lo antes posible.
+        </p>
+        <small class="container__text--small"
+          >Todos los campos marcados con <span class="asterisk">*</span> son
+          obligatorios.</small
+        >
+      </div>
+      <form action="/signup" method="post" class="container__form">
+        <label for="name" class="container__form--label"
+          >Nombre completo <span class="asterisk">*</span></label
+        >
+        <input
+          class="container__form--input"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Nombre..."
+          required
+        />
+        <label for="mail" class="container__form--label"
+          >Email <span class="asterisk">*</span></label
+        >
+        <input
+          class="container__form--mail"
+          id="mail"
+          type="email"
+          name="mail"
+          value="nombre.apellidos@mail.com"
+          required
+        />
+        <label for="tel" class="container__form--label">Teléfono</label>
+        <input
+          class="container__form--input"
+          id="tel"
+          type="tel"
+          name="tel"
+          placeholder="Ej: 123456789"
+        />
+        <label for="message" class="container__form--label"
+          >Mensaje <span class="asterisk">*</span></label
+        >
+        <textarea
+          class="container__form--message"
+          id="message"
+          name="message"
+          rows="4"
+          required
+        >
+    ¿Qué necesitas?
+        </textarea>
+        <input class="container__form--submit" type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <small class="footer-small">B.A.I.L.A. &copy 2020</small>
+      <div class="logo-adalab">
+        <img
+          src=".\assets\images\logo-adalab.png"
+          alt="logo de Adalab"
+          class="slogan-adalab"
+        />
+      </div>
+      <nav class="footer-nav">
+        <ul class="footer-links">
+          <li>
+            <a class="link-footer" href="index.html#team">Equipo</a>
+          </li>
+          <li>
+            <a class="link-footer" href="index.html#about-us">Quiénes somos</a>
+          </li>
+          <li><a class="link-footer" href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </body>
+</html>
