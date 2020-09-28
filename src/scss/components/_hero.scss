@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: 31px;
   &__img1 {
     width: 100%;
   }
@@ -37,6 +38,7 @@
     font-size: 1.125rem;
   }
   @media all and (min-width: 550px) {
+    margin-bottom: 0px;
     &__img1 {
       width: 100%;
       display: none;

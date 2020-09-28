@@ -10,7 +10,6 @@
 
   &__title {
     background-color: $dark-color;
-    color: $background-color;
     font-size: 1rem;
     font-family: $font-title;
     display: flex;
@@ -19,6 +18,10 @@
     height: 60px;
     width: 100vw;
     opacity: 0.95;
+    &--link {
+      color: $background-color;
+      text-decoration: none;
+    }
   }
   @media all and (min-width: 768px) {
     background: #099d8d;
@@ -45,8 +48,8 @@
   color: $background-color;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
-  padding: 8px 17px 7px 16px;
+  justify-content: space-around;
+  padding: 8px 8px 7px 8px;
   opacity: 0.9;
 
   &__item--link {
