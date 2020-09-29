@@ -42,6 +42,12 @@
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+  transition: font-size 1s, font-weight 1s, color 1s;
+  &:hover {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $light-color;
+  }
 }
 
 .slogan-adalab {
