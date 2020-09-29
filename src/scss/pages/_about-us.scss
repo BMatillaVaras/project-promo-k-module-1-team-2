@@ -57,6 +57,11 @@
   height: 15px;
   width: 15px;
   text-align: center;
+  transition: font-size 1s, text-shadow 1s;
+  &:hover {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px $light-color;
+  }
 }
 
 .point:before {

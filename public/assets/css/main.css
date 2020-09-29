@@ -48,9 +48,10 @@
       text-decoration: none;
       -webkit-animation: roll-in 0.6s ease-out both;
       animation: roll-in 0.6s ease-out both;
-      transition: font-size 1s, font-weight 1s; }
+      transition: font-size 1s, text-shadow 1s; }
       .header__title--link:hover {
-        font-size: 1.4rem; }
+        font-size: 1.4rem;
+        text-shadow: 2px 2px #14d9c4; }
   @media all and (min-width: 768px) {
     .header {
       background: #099d8d;
@@ -339,7 +340,11 @@
   color: #099d8d;
   height: 15px;
   width: 15px;
-  text-align: center; }
+  text-align: center;
+  transition: font-size 1s, text-shadow 1s; }
+  .fab2:hover {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #14d9c4; }
 
 .point:before {
   content: ".";

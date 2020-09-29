@@ -32,9 +32,10 @@
       color: $background-color;
       text-decoration: none;
       animation: roll-in 0.6s ease-out both;
-      transition: font-size 1s, font-weight 1s;
+      transition: font-size 1s, text-shadow 1s;
       &:hover {
         font-size: 1.4rem;
+        text-shadow: 2px 2px $light-color;
       }
     }
   }
