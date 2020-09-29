@@ -1,4 +1,14 @@
 /* header */
+@keyframes roll-in {
+  0% {
+    transform: translateX(-160px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0.95;
+  }
+}
 
 .header {
   display: flex;
@@ -21,6 +31,11 @@
     &--link {
       color: $background-color;
       text-decoration: none;
+      animation: roll-in 0.6s ease-out both;
+      transition: font-size 1s, font-weight 1s;
+      &:hover {
+        font-size: 1.4rem;
+      }
     }
   }
   @media all and (min-width: 768px) {
@@ -56,6 +71,11 @@
     color: $background-color;
     text-decoration: none;
     text-transform: uppercase;
+    transition: font-size 1s, font-weight 1s;
+    &:hover {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
   }
   @media all and (min-width: 768px) {
     background: $dark-color;
